@@ -42,7 +42,7 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .layout_padding2 {
@@ -272,6 +272,7 @@ a:focus {
     background-color: #282828;
     border-radius: 10px;
     margin: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     h4 {
       font-weight: bold;
@@ -293,21 +294,22 @@ a:focus {
       }
 
       .btm_input {
-        display: flex;
+        display: block;
 
-        input {
-          width: calc(95% - 116px);
-          margin: 0;
-          margin-right: 10px;
+        p{
+          color: $white;
+          text-align: center;
         }
 
         button {
-          flex: 1;
-          min-width: 116px;
           border: none;
           outline: none;
           background-color: $primary1;
           color: $white;
+          border-radius: 5px;
+          padding: 5px 15px;
+          display: block;
+          margin: 0 auto;
         }
       }
     }
@@ -398,8 +400,14 @@ a:focus {
     display: flex;
     text-align: center;
     justify-content: space-between;
-
+    gap: 25px;
     .box {
+      background-color: #000;
+      color: #fff;
+      padding: 16px 12px;
+      border-radius: 10px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      flex: 1;
       .img-box {
         height: 85px;
         display: flex;
@@ -491,6 +499,7 @@ a:focus {
     padding: 0 5%;
     position: relative;
   }
+  
 
   .owl-nav>div {
     margin-top: -26px;
@@ -635,27 +644,17 @@ a:focus {
     padding: 25px;
     background-color: #282828;
     margin: 0 45px;
-
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
     h4 {
       color: $white;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     form {
       margin: 15px 0;
 
-      input {
-        width: 100%;
-        height: 40px;
-        border: none;
-        outline: none;
-        margin-bottom: 15px;
-        padding-left: 15px;
-
-        &.message_input {
-          height: 75px;
-        }
-      }
 
       button {
         padding: 8px 30px;
@@ -666,6 +665,9 @@ a:focus {
         font-size: 15px;
         text-transform: uppercase;
         font-weight: bold;
+        display: block;        
+        margin: 0 auto;
+        margin-bottom: 5px;
       }
     }
   }

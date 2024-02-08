@@ -11,7 +11,7 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomepageComponent {
   customOptions: OwlOptions = {
-    autoplay: true,
+   // autoplay: true,
     loop: true,
     mouseDrag: false,
     touchDrag: false,
